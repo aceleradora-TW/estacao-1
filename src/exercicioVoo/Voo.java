@@ -26,4 +26,17 @@ public class Voo {
         return this.equipamento;
     }
 
+    public int getDuracao() {
+        return this.duracao;
+    }
+
+    @Override
+    public String toString() {
+        return "Voo{" +
+                "origem='" + origem + '\'' +
+                ", destino='" + destino + '\'' +
+                ", equipamento='" + equipamento + '\'' +
+                ", duracao=" + duracao +
+                '}';
+    }
 }

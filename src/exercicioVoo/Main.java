@@ -18,5 +18,9 @@ public class Main {
         System.out.println(fv.chagandoEm("Acr"));
         System.out.println(fv.operadoPor("boing 787"));
 
+        System.out.println(fv.porDuracao(190));
+
+
+
     }
 }

@@ -2,6 +2,8 @@ package exercicioVoo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class FiltroDeVoos {
 
@@ -11,12 +13,24 @@ public class FiltroDeVoos {
         listagemDevoos.add(voo);
     }
 
-    public ArrayList<Voo> saindoDe(String saida){
+    public List<Voo> porDuracao(int duracao) {
 
+
+
+        Stream<Voo> streamVoos = listagemDevoos.stream();
+
+        return streamVoos
+                .filter(voo -> voo.getDuracao() == duracao)
+                .collect(Collectors.toList());
+                // ...
+
+    }
+
+    public ArrayList<Voo> saindoDe(String saida){
         ArrayList<Voo> listaSaida = new ArrayList<>();
 
-        for (Voo voo: listagemDevoos){
-            if (saida.equals(voo.getOrigem())){
+        for (Voo voo: listagemDevoos) {
+            if(saida.equals(voo.getOrigem() )){
                 listaSaida.add(voo);
             }
         }
