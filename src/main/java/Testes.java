@@ -1,6 +1,6 @@
 package main.java;
 
-import lab01.TesteEncapsulamentoCarro;
+import main.java.lab01.TesteEncapsulamentoCarro;
 import main.java.lab02.TesteConstrutoresCarro;
 import main.java.lab03.TesteAtributosCarro;
 import main.java.lab04.TesteToString;
